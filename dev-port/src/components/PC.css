@@ -5528,10 +5528,10 @@ textarea.form-control-lg {
 }
 
 .modal-content {
-  position: relative;
+  position: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 150% !important;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -5579,7 +5579,8 @@ textarea.form-control-lg {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 5rem;
+  width: 100%;
 }
 
 .modal-footer {
