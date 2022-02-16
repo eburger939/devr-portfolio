@@ -11295,7 +11295,7 @@ textarea.form-control-lg {
 }
 
 .projects-row {
-    margin-top: 40px;
+    margin-top: 50px !important;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11600,19 +11600,19 @@ html {
   background-color: #b0b8db;
   border-bottom: 5px solid #662e68;
   color: black;
-
-}
-
-#about {
-  background-color: #b0b8db;
-  border-bottom: 5px solid #662e68;
-  color: #1f1b24;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   overflow: auto;
+}
+
+#about {
+  background-color: #b0b8db;
+  border-bottom: 5px solid #662e68;
+  color: #1f1b24;
+
 }
 
 #contact {
