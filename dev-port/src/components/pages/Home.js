@@ -5,7 +5,7 @@ export default function Home() {
     <header className="masthead text-white custom-header">
     <div className="d-flex justify-content-between custom-title">
         <div className="container d-flex flex-column">
-             <img className="masthead-avatar mb-0" src="./images/portss.png" alt="..." />
+             <img className="masthead-avatar mb-0" src="/images/portss.png" alt="..." />
           
            </div>
     <div className="container d-flex flex-column hello-container">

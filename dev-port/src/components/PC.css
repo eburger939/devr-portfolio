@@ -11287,10 +11287,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  height: 100%;
-  scroll-padding-top: calc(4.5rem - 1px);
-}
+
 
 .page-section {
   padding: 6rem 0;
@@ -11449,17 +11446,18 @@ html {
 }
 
 .hello-container {
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-self: center; */
+   
 }
 
 .masthead .masthead-avatar {
   /* width: 30rem; */
-  width: 65%;
-  /* height: 100%; */
-  /* position: absolute;
-  bottom: 0;    */
+  max-width: 45%;
+  max-height: 75%;
+  position: absolute;
+  bottom: 0;   
   margin-top: 0rem;
   margin-bottom: 8rem;
 
@@ -11514,7 +11512,7 @@ html {
   /* position: absolute;
   bottom: 0;    */
   margin-top: 0rem;
-  margin-bottom: 8rem;
+  margin-bottom: rem;
 }
 }
 
@@ -11572,9 +11570,26 @@ html {
 .custom-header {
   background-color: #1f1b24;
   border-bottom: 5px solid #662e68;
-  padding-bottom: 0rem;
-  padding-top: 6.5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
   
+}
+html {
+  height: 100%;
+  /* scroll-padding-top: calc(4.5rem - 1px); */
+}
+
+.footer {
+    background-image: linear-gradient(#1f1b24 20%, #3a3b66);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #662e68;
 }
 
 .portfolio {
@@ -11599,6 +11614,9 @@ html {
 .custom-title {
   margin-left: -12px; 
   line-height: 50px;
+  margin-top: auto;
+  /* bottom: 50rem; */
+  /* padding-bottom: 5%; */
 }
 
 .custom-title h1 {

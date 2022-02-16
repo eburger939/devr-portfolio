@@ -7,11 +7,11 @@ function NavBar({ currentPage, handlePageChange }) {
         <button
           className="navbar-toggler text-uppercase font-weight-bold text-white rounded"
           type="button"
-          dataBsToggle="collapse"
-          dataBsTarget="#navbarResponsive"
-          ariaControls="navbarResponsive"
-          ariaExpanded="false"
-          ariaLabel="Toggle navigation"
+          databstoggle="collapse"
+          databstarget="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           Menu
           <i className="fas fa-bars"></i>
