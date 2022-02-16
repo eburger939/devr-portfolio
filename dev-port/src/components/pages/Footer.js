@@ -1,12 +1,33 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
+
+const envelope = <FontAwesomeIcon icon={faEnvelope} />
+const linkedIn = <FontAwesomeIcon icon={faLinkedin} />
+const gitHub = <FontAwesomeIcon icon={faGithub} />
+
   return (
 <div className="footer">
-      <div className="footer-copyright text-center py-3">
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
-      </div>
-    </div>
+<section className="page-section" id="contact">
+            <div className="container">
+
+         <div className="row d-flex justify-content-center">      
+                 <div className="col-lg-4 mb-lg-0 d-flex justify-content-center">
+                        <a className="btn btn-social mx-1" href="mailto:emb.burger@yahoo.com">{envelope}</a>
+                        <a className="btn btn-social mx-1" target="_blank" href="https://www.linkedin.com/in/emburger">{linkedIn}</a>
+                        <a className="btn btn-social mx-1" target="_blank" href="https://github.com/eburger939">{gitHub}</a>
+                    </div>    
+
+                </div>       
+                  
+                </div>
+
+        </section>
+        </div>
   );
 }
 
