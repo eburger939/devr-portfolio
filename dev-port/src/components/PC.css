@@ -11290,14 +11290,30 @@ textarea.form-control-lg {
 }
 
 
-.page-section {
-  /* padding: 6rem 0; */
+.page-section1 {
+  margin-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
 }
 
 .projects-row {
     margin-top: 50px !important;
 }
 .page-section .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 60px;
+  }
+
+.page-section1 .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
   height: 100%;
@@ -11307,6 +11323,10 @@ textarea.form-control-lg {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
+  .page-section1 .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
   .page-section .page-section-heading {
     font-size: 3rem;
     line-height: 2.5rem;
