@@ -4,10 +4,10 @@ export default function Projects() {
     return (
         <section className="page-section portfolio" id="portfolio">
             <div className="container">
-                <h2 className="page-section-heading text-white text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 className="page-section-heading text-black text-center text-uppercase text-secondary mb-0">Projects</h2>
 
 
-                <div className="row justify-content-center">
+                <div className="row justify-content-center projects-row">
 
                     <div className="col-md-6 col-lg-4 mb-5">
                         <div className="portfolio-item mx-auto port-item">

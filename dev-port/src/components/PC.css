@@ -11292,6 +11292,10 @@ textarea.form-control-lg {
 .page-section {
   padding: 6rem 0;
 }
+
+.projects-row {
+    margin-top: 40px;
+}
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -11592,8 +11596,9 @@ html {
 }
 
 .portfolio {
-  background-color: #3a3b66;
+  background-color: #b0b8db;
   border-bottom: 5px solid #662e68;
+  color: black;
 
 }
 
