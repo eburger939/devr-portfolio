@@ -10,7 +10,9 @@ import ModalTitle from "react-bootstrap/ModalTitle";
 export default function Projects(props) {
     const [isOpen, setIsOpen] = useState(false);
     const showModal = () => {
-        setIsOpen(true)
+        this.setIsOpen({ show: true})
+
+
     };
     const hideModal = () => {
         setIsOpen(false)
@@ -27,9 +29,9 @@ export default function Projects(props) {
 
 
                 <div className="row justify-content-center projects-row">
-                    {props.projs.map((project) => (
+                    {props.projs.map((project, index) => (
 
-                        <div className="col-md-6 col-lg-4 mb-5" onClick={showModal} key={project.id}>
+                        <><div className="col-md-6 col-lg-4 mb-5" onClick={showModal} key={project.id}>
                             <div className="portfolio-item mx-auto port-item">
                                 <div className="portfolio-item mx-auto" data-bs-toggle={"modal"} data-bs-target="#portfolioModal1">
                                     <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -39,6 +41,42 @@ export default function Projects(props) {
                                 </div>
                             </div>
                         </div>
+                        <Modal
+                            show={isOpen}
+                            onHide={hideModal}
+                            size='lg'
+                            aria-labelledby="contained-modal-title-vcenter"
+                            centered>
+
+
+                                <><div className="modal-header border-0"><button className="btn-close" type="button" onClick={hideModal} key={project.id} data-bs-dismiss="modal" aria-label="Close"></button></div><div className="modal-body  pb-1">
+                                    <div className="container">
+                                        <div className="row ">
+                                            <div className="col">
+                                                <h2 className="portfolio-modal-title text-secondary text-center text-uppercase mb-0">{project.title} <i className="fas fa-star-of-life custom-star"></i></h2>
+
+                                                <a href={project.href} target="_blank"> <img className="img-fluid rounded mb-1" src={project.modalImage} alt="..." /></a>
+                                                <p className="mb-4">{project.description}</p>
+                                                <p>{project.technologies} </p>
+                                                <div className='links text-center'>
+                                                    <a href={project.href} target="_blank">Deployed Application</a>
+                                                    <br />
+
+                                                    <a href={project.gitHub} target="_blank">GitHub Repository</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></>
+
+
+                            </Modal></>
+
+
+
+
+
+
                         ))};              
 
 
@@ -49,36 +87,7 @@ export default function Projects(props) {
                 </div>
             </div>
 
-            <Modal
-            show={isOpen}
-            onHide={hideModal}
-            size='lg'
-            aria-labelledby="contained-modal-title-vcenter"
-            centered>
 
-{props.projs.map((project) => (
-            <><div className="modal-header border-0"><button className="btn-close" type="button" onClick={hideModal} key={project.id} data-bs-dismiss="modal" aria-label="Close"></button></div><div className="modal-body  pb-1">
-        <div className="container">
-            <div className="row ">
-                <div className="col">
-                    <h2 className="portfolio-modal-title text-secondary text-center text-uppercase mb-0">{project.title} <i className="fas fa-star-of-life custom-star"></i></h2>
-
-                    <a href={project.href} target="_blank"> <img className="img-fluid rounded mb-1" src={project.modalImage} alt="..." /></a>
-                    <p className="mb-4">{project.description}</p>
-                    <p>{project.technologies} </p>
-                    <div className='links text-center'>
-                        <a href={project.href} target="_blank">Deployed Application</a>
-                        <br />
-
-                        <a href={project.gitHub} target="_blank">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></>
-))}
-
-        </Modal>
 
 
 

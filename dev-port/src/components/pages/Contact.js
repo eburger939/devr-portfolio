@@ -1,6 +1,10 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
+
+
+
+
 export default function Contact() {
     return (
 
@@ -8,41 +12,93 @@ export default function Contact() {
         <section className="page-section1 mb-0" id="about">
             <div className="container-fluid">
                 <h2 className="page-section-heading text-center text-uppercase">Contact</h2>
-                <div class="container card-container">
+                <div className="container card-container">
+                <div class="container">
+  <h1>FormSubmit Demo</h1>
+  <form target="_blank" action="https://formsubmit.co/eburger939@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required/>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required/>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
 
 
-                    <div class="row justify-content-center">
-                        <div class="col-6">
-                            <div class="all-card1">
-                                <div class="card-body custom-body">
-                                    <form class="sign-in">
 
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label custom-form-email"><strong>Name</strong></label>
-                                            <input type="text" class="form-control custom-control"/>
+
+{/* 
+                    <div className="row justify-content-center">
+
+
+                        <div className="col-md-9 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="https://formsubmit.co/eburger939@gmail.com" method="POST">
+
+
+                                <div className="row">
+
+                                    <div className="col-md-6">
+                                        <div className="md-form mb-0">
+                                            <label for="name" className="">Your name</label>
+                                            <input type="text" id="name" name="name" className="form-control" />
 
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1"
-                                                class="form-label custom-pw"><strong>Email Address</strong></label>
-                                            <input type="email" class="form-control custom-form" id="login-password"/>
+                                    </div>
+
+                                    <div className="col-md-6">
+                                        <div className="md-form mb-0"><label for="email" className="">Your email</label>
+                                            <input type="text" id="email" name="email" className="form-control" />
 
                                         </div>
-                                        <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label custom-form-email"><strong>Message</strong></label>
-                                        <textarea class="form-control" id="comment-text" rows="3"></textarea>
-                                        <br />
-                                                <button type="submit" class="btn custom-btn1"><strong>Submit</strong></button>
-                                        </div>
-
-                                    </form>
+                                    </div>
 
                                 </div>
+
+                                <div className="row">
+                                    <div className="col-md-12">
+                                        <div className="md-form mb-0"><label for="subject" className="">Subject</label>
+                                            <input type="text" id="subject" name="subject" className="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="row">
+
+                                    <div className="col-md-12">
+
+                                        <div className="md-form"><label for="message">Your message</label>
+                                            <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <br />
+                            <div className="text-center text-md-left">
+                                <a className="btn email-btn">Send</a>
                             </div>
+                            <div className="status"></div>
                         </div>
-                    </div>
+
+
+                    </div> */}
+
+               
                 </div>
-                </div>
+            </div>
         </section>
 
 
