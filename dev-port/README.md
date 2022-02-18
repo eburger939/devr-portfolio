@@ -15,7 +15,7 @@
 
 
 ## Link to deployed application:
-* https://adv-blog.herokuapp.com/
+* https://eburger939.github.io/devr-portfolio/#projects
 
 ## Link to repository
 * https://github.com/eburger939/devr-portfolio
