@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/devr-portfolio/static/css/main.80ad28d9.css",
-    "main.js": "/devr-portfolio/static/js/main.bc8f45e5.js",
+    "main.js": "/devr-portfolio/static/js/main.4537cf18.js",
+    "static/media/portss.png": "/devr-portfolio/static/media/portss.b13fff3f05a66fde2f6f.png",
     "index.html": "/devr-portfolio/index.html",
     "main.80ad28d9.css.map": "/devr-portfolio/static/css/main.80ad28d9.css.map",
-    "main.bc8f45e5.js.map": "/devr-portfolio/static/js/main.bc8f45e5.js.map"
+    "main.4537cf18.js.map": "/devr-portfolio/static/js/main.4537cf18.js.map"
   },
   "entrypoints": [
     "static/css/main.80ad28d9.css",
-    "static/js/main.bc8f45e5.js"
+    "static/js/main.4537cf18.js"
   ]
 }
