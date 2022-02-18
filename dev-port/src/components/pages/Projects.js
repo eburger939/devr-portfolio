@@ -10,7 +10,7 @@ import ModalTitle from "react-bootstrap/ModalTitle";
 export default function Projects(props) {
     const [isOpen, setIsOpen] = useState(false);
     const showModal = () => {
-        this.setIsOpen({ show: true})
+        setIsOpen({ show: true})
 
 
     };
@@ -29,7 +29,7 @@ export default function Projects(props) {
 
 
                 <div className="row justify-content-center projects-row">
-                    {props.projs.map((project, index) => (
+                    {props.projs.map((project) => (
 
                         <><div className="col-md-6 col-lg-4 mb-5" onClick={showModal} key={project.id}>
                             <div className="portfolio-item mx-auto port-item">
@@ -77,7 +77,7 @@ export default function Projects(props) {
 
 
 
-                        ))};              
+                        ))}              
 
 
 

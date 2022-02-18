@@ -11,7 +11,7 @@ import './PC.css'
 const projs = [
   {
     id: 1,
-    mainImage: "images/petrec3.png",
+    mainImage: "/images/petrec3.png",
     description: "Manage and maintain all your pet records, medications, and vaccinations in one application!  PetRec is a tool for all pet owers to assist in organizing their pets medications, vaccinations, and health records.  A profile, or chart, can be create for every pet in the househould, and individualized based on that pets' health needs!  No more papers, binders, or forgetting when your pup's next monthly heartworm medication is due!",
     technologies: "Technologies Used: HTML, CSS, Javascript, Node.js, Express.js, Bcrypt, Handlebars, MySQL (Sequelize), Multer",
     modalImage: "images/petrec2.png",
@@ -31,7 +31,7 @@ const projs = [
   },
   {
     id: 3,
-    mainImage: "images/advblog1.png",
+    mainImage: "/images/advblog1.png",
     description: "Adventurer's blog is a website meant for explorers!  Create posts on your greatest adventures, your plans for travel and more!  As a user you can create new blogs and edit or delete your previous posts!  Users can comment on each other's posts to communicate ideas and experiences!",
     technologies: "Technologies Used: HTML, CSS, Javascript, Node.js, Express.js, Bcrypt, Handlebars, MySQL (Sequelize)",
     modalImage: "images/adv-blog2.png",
@@ -41,7 +41,7 @@ const projs = [
   },
   {
     id: 4,
-    mainImage: "images/weather.png",
+    mainImage: "/images/weather.png",
     description: "Interested in knowing the 5 day forecast in your favorite city?  Check out this weather dashboard!  Users can see the current weather, and weather for the next five days!  Search results save on the left for easier access!",
     technologies: "Technologies Used: HTML, CSS, Javascript, Open Weather Map API",
     modalImage: "images/weatherdash1.png",
@@ -51,7 +51,7 @@ const projs = [
   },
   {
     id: 5,
-    mainImage: "images/thwider1.png",
+    mainImage: "/images/thwider1.png",
     description: "Manage and maintain all your pet records, medications, and vaccinations in one application!  PetRec is a tool for all pet owers to assist in organizing their pets medications, vaccinations, and health records.  A profile, or chart, can be create for every pet in the househould, and individualized based on that pets' health needs!  No more papers, binders, or forgetting when your pup's next monthly heartworm medication is due!",
     technologies: "Technologies Used: HTML, CSS, Javascript, Node.js, Express.js, Bcrypt, Handlebars, MySQL (Sequelize), Multer",
     modalImage: "https://drive.google.com/file/d/13g6wy2xKoHOteDt9ejRnUupzkiZb1blv/preview",
