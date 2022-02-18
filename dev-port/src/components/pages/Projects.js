@@ -6,19 +6,22 @@ import ModalBody from "react-bootstrap/ModalBody";
 import ModalHeader from "react-bootstrap/ModalHeader";
 import ModalFooter from "react-bootstrap/ModalFooter";
 import ModalTitle from "react-bootstrap/ModalTitle";
+import { faLess } from '@fortawesome/free-brands-svg-icons';
+
+
+
 
 export default function Projects(props) {
     const [isOpen, setIsOpen] = useState(false);
-    const showModal = () => {
+    const showModal =() => {
+ 
         setIsOpen({ show: true})
-
-
+        
     };
     const hideModal = () => {
         setIsOpen(false)
     };
 
-    const plus = <FontAwesomeIcon icon={faPlus} size="4x" inverse />
 
 
     return (
@@ -31,7 +34,7 @@ export default function Projects(props) {
                 <div className="row justify-content-center projects-row">
                     {props.projs.map((project) => (
 
-                        <><div className="col-md-6 col-lg-4 mb-5" onClick={showModal} key={project.id}>
+                        <><div className="col-md-6 col-lg-4 mb-5" onClick={showModal} key={project.id} id={project.id}>
                             <div className="portfolio-item mx-auto port-item">
                                 <div className="portfolio-item mx-auto" data-bs-toggle={"modal"} data-bs-target="#portfolioModal1">
                                     <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -41,6 +44,9 @@ export default function Projects(props) {
                                 </div>
                             </div>
                         </div>
+
+
+
                         <Modal
                             show={isOpen}
                             onHide={hideModal}
